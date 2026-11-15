@@ -98,7 +98,9 @@ def main():
     schema=(ROOT/"SCHEMA.md").read_text();blocks=[json.loads(x) for x in re.findall(r"```json\s*(.*?)\s*```",schema,re.S)]
     assert blocks[0]==scripts[0] and blocks[1]==w
     readme=(ROOT/"README.md").read_text();citation=(ROOT/"CITATION.cff").read_text();history=(ROOT/"CHANGELOG.md").read_text();spec=(ROOT/"SPECIFICATION.md").read_text()
-    assert "Version:" not in readme and "version:" not in citation and "WACP 6.0" in history
+    assert "Version:" not in readme and "WACP 6.0" in history
+    # cff-version describes the citation format, not a WARP protocol version.
+    assert not re.search(r"^[ \t]*version[ \t]*:",citation,re.I|re.M), "CITATION.cff must not declare a protocol version"
     assert "A → F → E" in readme+history and "minimum sufficient context" in (readme+spec).lower()
     assert "`spec`" in spec and "`page`" in spec and "userQuestion" in spec and "date-released:" not in citation
     assert "Eric Strate" in readme and "EricStrate.com" in readme and SPEC_URL in citation
