@@ -142,7 +142,7 @@ An optional C MUST resolve to a unique visible element with an authorized public
 
 ## 8. Presentation
 
-WARP preserves the low-visual-noise presentation profile introduced in 5.0.
+WARP retains the low-visual-noise presentation profile introduced under WACP 5.0, before the protocol was renamed WARP in October 2026.
 
 Recommended:
 
