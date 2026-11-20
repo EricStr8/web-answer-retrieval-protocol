@@ -2,6 +2,10 @@
 
 Founder and original proposer: Eric Strate. Original live test bed and canonical specification: https://ericstrate.com/warp/
 
+## Reader-first specification and historical clarification — November 20, 2026
+
+The canonical WARP page now presents a concise A → F → E walkthrough with optional C, readable technical subsections and expandable code and validation details. The HTML example now includes its visible support element. WACP 5.0 is credited for low-noise citation presentation; WACP 6.0 for the A → F → E model. The website's conformance text now agrees with the repository that broad `queryIntent` metadata is optional. The A/F/E identities, core relationships and unverified-adoption disclaimer remain unchanged.
+
 ## Optional Contact (C) extension — November 20, 2026
 
 An experimental, non-breaking C (Contact) object optionally links a relevant Answer Object to a visible, direct public contact route and protocol map entry. The A → F → E core is unchanged. The canonical specification at https://ericstrate.com/warp/#warp-contact-extension and [CONTACT-EXTENSION.md](CONTACT-EXTENSION.md) document requirements and pilot tests on the pricing and WordPress AEO pages. No adoption or lead improvement is claimed.
