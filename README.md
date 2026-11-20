@@ -18,6 +18,10 @@ A page may contain multiple A objects. Each A can declare a broad `queryIntent`.
 
 The design goal is **minimum sufficient context**: a compatible system could retrieve only the A/F/E units needed for a question instead of processing unrelated page content. Token, latency, cost, and energy savings are hypotheses to be measured by consuming systems, not guaranteed outcomes.
 
+## Optional contact route (C)
+
+WARP Core remains **A → F → E**. The experimental, optional **C (Contact)** extension allows a commercially relevant Answer Object to reference a public, visible contact route. Its `contactRef` maps to a visible contact object and an optional protocol-specific `contacts` collection; existing Schema.org `ContactPoint` may mirror the destination. C is not required for core conformance and does not guarantee AI display or automated contact. See [CONTACT-EXTENSION.md](CONTACT-EXTENSION.md) and the [canonical specification](https://ericstrate.com/warp/#warp-contact-extension).
+
 ## Implementing WARP
 
 - Give each Answer Object a stable fragment such as `#a1` and keep its concise answer in ordinary visible HTML.
