@@ -2,6 +2,10 @@
 
 Founder and original proposer: Eric Strate. Original live test bed and canonical specification: https://ericstrate.com/warp/
 
+## Optional Contact (C) extension — November 20, 2026
+
+An experimental, non-breaking C (Contact) object optionally links a relevant Answer Object to a visible, direct public contact route and protocol map entry. The A → F → E core is unchanged. The canonical specification at https://ericstrate.com/warp/#warp-contact-extension and [CONTACT-EXTENSION.md](CONTACT-EXTENSION.md) document requirements and pilot tests on the pricing and WordPress AEO pages. No adoption or lead improvement is claimed.
+
 ## WARP naming transition — October 2026
 
 The public protocol is now **WARP — Web Answer Retrieval Protocol**. Public-facing version numbers were retired; future revisions are recorded in this history rather than marketed as numbered protocol names. Earlier WACP revision names remain below as historical records.
