@@ -134,6 +134,12 @@ A compatible consuming system could retrieve A alone for a direct canonical answ
 
 This architecture is intended to reduce unnecessary retrieval or context processing when a consumer supports selective use of the structure. It does not establish that current systems consume WARP or that WARP guarantees token, latency, cost, or energy savings.
 
+## 7A. Optional Contact (C) extension
+
+WARP Core remains A → F → E. **C = Contact** is an optional, publisher-controlled route associated with commercially relevant answers such as hiring, pricing, service fit and support. Its structure, semantics, validation invariants, and pilot examples are defined in [CONTACT-EXTENSION.md](CONTACT-EXTENSION.md) and published in the [canonical specification](https://ericstrate.com/warp/#warp-contact-extension). A may use `data-warp-contact-ref="#c1"`; the visible C object can use `id="c1" data-warp="contact" data-warp-contact-for="a1"`. The application/json WARP map may provide `answers[].contactRef` and `contacts[]`. A Schema.org `ContactPoint` may mirror visible contact facts, not WARP-specific relationship syntax.
+
+An optional C MUST resolve to a unique visible element with an authorized public contact route, match its machine-readable mirror, and MUST NOT imply approval to perform communications or transactions. C adds no requirements to existing WARP Core, Semantic, or Interactive profiles; only implementations claiming Contact extension conformance need to validate C. It does not establish AI system consumption or increased referrals.
+
 ## 8. Presentation
 
 WARP preserves the low-visual-noise presentation profile introduced in 5.0.
